@@ -8,7 +8,6 @@ target/
 /data/models
 /data/images
 *.png
-*.jpg
 resnet50_ssd_model-symbol.json
 resnet50_ssd_model-0000.params
 synset.txt
