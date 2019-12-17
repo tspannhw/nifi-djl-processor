@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description></description>
+    <groupId>39dfb6ac-016e-1000-4eb0-88c26548fd22</groupId>
+    <name>DJL Test</name>
+    <snippet>
+        <processGroups>
+            <id>a3bf0ba4-3007-3c39-0000-000000000000</id>
+            <parentGroupId>23eaff22-3188-336f-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <versionedComponentId>a3bf0ba4-3007-3c39-a2d5-bb1c54796462</versionedComponentId>
+            <comments></comments>
+            <contents>
+                <connections>
+                    <id>58995a6e-40f8-34b2-0000-000000000000</id>
+                    <parentGroupId>a3bf0ba4-3007-3c39-0000-000000000000</parentGroupId>
+                    <versionedComponentId>58995a6e-40f8-34b2-bf77-9832d5fad97c</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>a3bf0ba4-3007-3c39-0000-000000000000</groupId>
+                        <id>3baa0800-eb97-3891-0000-000000000000</id>
+                        <type>FUNNEL</type>
+                        <versionedComponentId>3baa0800-eb97-3891-a5c0-25a4e9c93587</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>failure</selectedRelationships>
+                    <source>
+                        <groupId>a3bf0ba4-3007-3c39-0000-000000000000</groupId>
+                        <id>6db35f55-3d8c-35dd-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>6db35f55-3d8c-35dd-92af-f7ff960637ab</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>8095881a-31a4-3413-0000-000000000000</id>
+                    <parentGroupId>a3bf0ba4-3007-3c39-0000-000000000000</parentGroupId>
+                    <versionedComponentId>8095881a-31a4-3413-9b04-1a297c8edb53</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>a3bf0ba4-3007-3c39-0000-000000000000</groupId>
+                        <id>b8e3c813-d949-3b0c-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>b8e3c813-d949-3b0c-b70a-bca806de4b66</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>a3bf0ba4-3007-3c39-0000-000000000000</groupId>
+                        <id>50f3c708-8075-31c5-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>50f3c708-8075-31c5-aa47-931ec917eb8c</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>9f29f537-2dcc-397b-0000-000000000000</id>
+                    <parentGroupId>a3bf0ba4-3007-3c39-0000-000000000000</parentGroupId>
+                    <versionedComponentId>9f29f537-2dcc-397b-85b6-187e86c72a7d</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>a3bf0ba4-3007-3c39-0000-000000000000</groupId>
+                        <id>50f3c708-8075-31c5-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>50f3c708-8075-31c5-aa47-931ec917eb8c</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>a3bf0ba4-3007-3c39-0000-000000000000</groupId>
+                        <id>42e11591-1916-3442-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>42e11591-1916-3442-ab67-512b3541e40f</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>a5c64279-319d-343b-0000-000000000000</id>
+                    <parentGroupId>a3bf0ba4-3007-3c39-0000-000000000000</parentGroupId>
+                    <versionedComponentId>a5c64279-319d-343b-8afa-6ef1f2f13a0c</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>a3bf0ba4-3007-3c39-0000-000000000000</groupId>
+                        <id>3baa0800-eb97-3891-0000-000000000000</id>
+                        <type>FUNNEL</type>
+                        <versionedComponentId>3baa0800-eb97-3891-a5c0-25a4e9c93587</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>failure</selectedRelationships>
+                    <source>
+                        <groupId>a3bf0ba4-3007-3c39-0000-000000000000</groupId>
+                        <id>50f3c708-8075-31c5-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>50f3c708-8075-31c5-aa47-931ec917eb8c</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>ac004437-81d3-388c-0000-000000000000</id>
+                    <parentGroupId>a3bf0ba4-3007-3c39-0000-000000000000</parentGroupId>
+                    <versionedComponentId>ac004437-81d3-388c-b9aa-fd7ae4d180f9</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>a3bf0ba4-3007-3c39-0000-000000000000</groupId>
+                        <id>42e11591-1916-3442-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>42e11591-1916-3442-ab67-512b3541e40f</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>a3bf0ba4-3007-3c39-0000-000000000000</groupId>
+                        <id>6db35f55-3d8c-35dd-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>6db35f55-3d8c-35dd-92af-f7ff960637ab</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>adf09c1c-66c5-3579-0000-000000000000</id>
+                    <parentGroupId>a3bf0ba4-3007-3c39-0000-000000000000</parentGroupId>
+                    <versionedComponentId>adf09c1c-66c5-3579-8f6c-0d297f10dd0e</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>a3bf0ba4-3007-3c39-0000-000000000000</groupId>
+                        <id>3baa0800-eb97-3891-0000-000000000000</id>
+                        <type>FUNNEL</type>
+                        <versionedComponentId>3baa0800-eb97-3891-a5c0-25a4e9c93587</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>failure</selectedRelationships>
+                    <source>
+                        <groupId>a3bf0ba4-3007-3c39-0000-000000000000</groupId>
+                        <id>d1b663a6-9ce4-3197-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>d1b663a6-9ce4-3197-8c98-4cb0aa72476a</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>ea059eac-19c7-33e5-0000-000000000000</id>
+                    <parentGroupId>a3bf0ba4-3007-3c39-0000-000000000000</parentGroupId>
+                    <versionedComponentId>ea059eac-19c7-33e5-9bcb-89c9b6af117f</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>a3bf0ba4-3007-3c39-0000-000000000000</groupId>
+                        <id>d1b663a6-9ce4-3197-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>d1b663a6-9ce4-3197-8c98-4cb0aa72476a</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>a3bf0ba4-3007-3c39-0000-000000000000</groupId>
+                        <id>50f3c708-8075-31c5-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>50f3c708-8075-31c5-aa47-931ec917eb8c</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <funnels>
+                    <id>3baa0800-eb97-3891-0000-000000000000</id>
+                    <parentGroupId>a3bf0ba4-3007-3c39-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1168.0</x>
+                        <y>112.0</y>
+                    </position>
+                    <versionedComponentId>3baa0800-eb97-3891-a5c0-25a4e9c93587</versionedComponentId>
+                </funnels>
+                <processors>
+                    <id>42e11591-1916-3442-0000-000000000000</id>
+                    <parentGroupId>a3bf0ba4-3007-3c39-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>373.5001043667453</x>
+                        <y>86.5</y>
+                    </position>
+                    <versionedComponentId>42e11591-1916-3442-ab67-512b3541e40f</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-update-attribute-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Delete Attributes Expression</key>
+<value>
+    <name>Delete Attributes Expression</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>
+    <name>Store State</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+<value>
+    <name>Stateful Variables Initial Value</name>
+</value>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>
+    <name>canonical-value-lookup-cache-size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>mime.type</key>
+<value>
+    <name>mime.type</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Delete Attributes Expression</key>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>Do not store state</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>100</value>
+                            </entry>
+                            <entry>
+<key>mime.type</key>
+<value>image/jpeg</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>UpdateAttribute</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+                </processors>
+                <processors>
+                    <id>50f3c708-8075-31c5-0000-000000000000</id>
+                    <parentGroupId>a3bf0ba4-3007-3c39-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>384.0</x>
+                        <y>304.0</y>
+                    </position>
+                    <versionedComponentId>50f3c708-8075-31c5-aa47-931ec917eb8c</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-djl-nar</artifact>
+                        <group>com.dataflowdeveloper</group>
+                        <version>1.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Dataset</key>
+<value>
+    <name>Dataset</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Flavor</key>
+<value>
+    <name>Flavor</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Size</key>
+<value>
+    <name>Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Backbone</key>
+<value>
+    <name>Backbone</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Dataset</key>
+<value>voc</value>
+                            </entry>
+                            <entry>
+<key>Flavor</key>
+<value>v1</value>
+                            </entry>
+                            <entry>
+<key>Size</key>
+<value>512</value>
+                            </entry>
+                            <entry>
+<key>Backbone</key>
+<value>resnet50</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>DeepLearningProcessor</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>com.dataflowdeveloper.djl.DeepLearningProcessor</type>
+                </processors>
+                <processors>
+                    <id>6db35f55-3d8c-35dd-0000-000000000000</id>
+                    <parentGroupId>a3bf0ba4-3007-3c39-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>368.0</x>
+                        <y>-168.0</y>
+                    </position>
+                    <versionedComponentId>6db35f55-3d8c-35dd-92af-f7ff960637ab</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-GetWebCamera-nar</artifact>
+                        <group>com.dataflowdeveloper</group>
+                        <version>1.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>imagefilename</key>
+<value>
+    <name>imagefilename</name>
+</value>
+                            </entry>
+                            <entry>
+<key>cameraname</key>
+<value>
+    <name>cameraname</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>imagefilename</key>
+<value>${UUID()}.jpg</value>
+                            </entry>
+                            <entry>
+<key>cameraname</key>
+<value>Display</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>30 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>GetWebCameraProcessor</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>com.dataflowdeveloper.processors.GetWebCamera.GetWebCameraProcessor</type>
+                </processors>
+                <processors>
+                    <id>b8e3c813-d949-3b0c-0000-000000000000</id>
+                    <parentGroupId>a3bf0ba4-3007-3c39-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>184.0</x>
+                        <y>656.0</y>
+                    </position>
+                    <versionedComponentId>b8e3c813-d949-3b0c-b70a-bca806de4b66</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-slack-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>webhook-url</key>
+<value>
+    <name>webhook-url</name>
+</value>
+                            </entry>
+                            <entry>
+<key>webhook-text</key>
+<value>
+    <name>webhook-text</name>
+</value>
+                            </entry>
+                            <entry>
+<key>channel</key>
+<value>
+    <name>channel</name>
+</value>
+                            </entry>
+                            <entry>
+<key>username</key>
+<value>
+    <name>username</name>
+</value>
+                            </entry>
+                            <entry>
+<key>icon-url</key>
+<value>
+    <name>icon-url</name>
+</value>
+                            </entry>
+                            <entry>
+<key>icon-emoji</key>
+<value>
+    <name>icon-emoji</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>webhook-url</key>
+                            </entry>
+                            <entry>
+<key>webhook-text</key>
+<value>=================
+Deep Learning Class Label: ${class_1}
+                     File: ${filename}
+              Probability: ${probability_1}
+UUID: ${uuid}
+Rank: ${rank_1}
+
+Bounding Box (Height/Width, X,Y)
+${boundingbox_height_1}/ ${boundingbox_width_1}
+
+${boundingbox_x_1}, ${boundingbox_y_1}
+
+Image (Height/Width, X,Y)
+${image_height_1} / ${image_width_1}
+
+${image_min_x_1}, ${image_min_y_1}
+===================</value>
+                            </entry>
+                            <entry>
+<key>channel</key>
+<value>#workshop</value>
+                            </entry>
+                            <entry>
+<key>username</key>
+                            </entry>
+                            <entry>
+<key>icon-url</key>
+                            </entry>
+                            <entry>
+<key>icon-emoji</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>PutSlack DLJ</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.slack.PutSlack</type>
+                </processors>
+                <processors>
+                    <id>d1b663a6-9ce4-3197-0000-000000000000</id>
+                    <parentGroupId>a3bf0ba4-3007-3c39-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>592.0</x>
+                        <y>656.0</y>
+                    </position>
+                    <versionedComponentId>d1b663a6-9ce4-3197-8c98-4cb0aa72476a</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-slack-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>post-message-url</key>
+<value>
+    <name>post-message-url</name>
+</value>
+                            </entry>
+                            <entry>
+<key>file-upload-url</key>
+<value>
+    <name>file-upload-url</name>
+</value>
+                            </entry>
+                            <entry>
+<key>access-token</key>
+<value>
+    <name>access-token</name>
+</value>
+                            </entry>
+                            <entry>
+<key>channel</key>
+<value>
+    <name>channel</name>
+</value>
+                            </entry>
+                            <entry>
+<key>text</key>
+<value>
+    <name>text</name>
+</value>
+                            </entry>
+                            <entry>
+<key>upload-flowfile</key>
+<value>
+    <name>upload-flowfile</name>
+</value>
+                            </entry>
+                            <entry>
+<key>file-title</key>
+<value>
+    <name>file-title</name>
+</value>
+                            </entry>
+                            <entry>
+<key>file-name</key>
+<value>
+    <name>file-name</name>
+</value>
+                            </entry>
+                            <entry>
+<key>file-mime-type</key>
+<value>
+    <name>file-mime-type</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>post-message-url</key>
+<value>https://slack.com/api/chat.postMessage</value>
+                            </entry>
+                            <entry>
+<key>file-upload-url</key>
+<value>https://slack.com/api/files.upload</value>
+                            </entry>
+                            <entry>
+<key>access-token</key>
+                            </entry>
+                            <entry>
+<key>channel</key>
+<value>#workshop</value>
+                            </entry>
+                            <entry>
+<key>text</key>
+                            </entry>
+                            <entry>
+<key>upload-flowfile</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>file-title</key>
+<value>${filename}</value>
+                            </entry>
+                            <entry>
+<key>file-name</key>
+<value>${filename}</value>
+                            </entry>
+                            <entry>
+<key>file-mime-type</key>
+<value>${mime.type}</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>30 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>PostSlack</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.slack.PostSlack</type>
+                </processors>
+            </contents>
+            <name>DJL Test</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>12/17/2019 12:27:17 EST</timestamp>
+</template>
