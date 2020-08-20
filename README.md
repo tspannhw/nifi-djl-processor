@@ -7,7 +7,7 @@ Will test soon with Centos 7
 
 Right now it's been tested JDK 8 to JDK 8 NiFi 1.11.4
 
-2020/August
+2020/August - updated from 0.2 to 0.6
 
 https://github.com/awslabs/djl/blob/master/mxnet/mxnet-engine/README.md
 
