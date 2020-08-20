@@ -1,7 +1,8 @@
 package com.dataflowdeveloper.djl;
 
 import ai.djl.ModelException;
-import ai.djl.modality.cv.ImageVisualization;
+import ai.djl.modality.cv.Image;
+import ai.djl.modality.cv.ImageFactory;
 import ai.djl.translate.TranslateException;
 import org.apache.commons.io.IOUtils;
 import org.apache.nifi.annotation.behavior.*;
@@ -16,8 +17,6 @@ import org.apache.nifi.processor.exception.ProcessException;
 import org.apache.nifi.processor.io.StreamCallback;
 import org.apache.nifi.processor.util.StandardValidators;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -160,12 +159,14 @@ public class DeepLearningProcessor extends AbstractProcessor {
 
                         List<Result> results = null;
                         InputStream in = null;
-                        BufferedImage img = null;
+//                        BufferedImage img = null;
+                        Image img = null;
                         String deepLearningLabel = null;
 
                         try {
                             in = new ByteArrayInputStream(byteArray);
-                            img = ImageIO.read(in);
+                            //img = ImageIO.read(in);
+                            img = ImageFactory.getInstance().fromInputStream(in);
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
@@ -205,8 +206,9 @@ public class DeepLearningProcessor extends AbstractProcessor {
                                     e.printStackTrace();
                                 }
 
-                                ImageVisualization.drawBoundingBoxes(img, result.getDetection());
-                                ImageIO.write(img, "png", out);
+                                Image newImage = img.duplicate(Image.Type.TYPE_INT_ARGB);
+                                newImage.drawBoundingBoxes(result.getDetection());
+                                newImage.save(out, "png");
                                 attributes.put("filename", finalFilename + "." + deepLearningLabel + ".png");
                                 i++;
                             }

@@ -25,6 +25,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <djl.version>0.6.0</djl.version>
         <classifier/>
     </properties>
 
@@ -35,22 +36,22 @@
         <dependency>
             <groupId>org.apache.nifi</groupId>
             <artifactId>nifi-api</artifactId>
-            <version>1.10.0</version>
+            <version>1.11.4</version>
         </dependency>
         <dependency>
             <groupId>org.apache.nifi</groupId>
             <artifactId>nifi-utils</artifactId>
-            <version>1.10.0</version>
+            <version>1.11.4</version>
         </dependency>
         <dependency>
             <groupId>org.apache.nifi</groupId>
             <artifactId>nifi-processor-utils</artifactId>
-            <version>1.10.0</version>
+            <version>1.11.4</version>
         </dependency>
         <dependency>
             <groupId>org.apache.nifi</groupId>
             <artifactId>nifi-mock</artifactId>
-            <version>1.10.0</version>
+            <version>1.11.4</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -62,12 +63,6 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>ai.djl.mxnet</groupId>
-            <artifactId>mxnet-model-zoo</artifactId>
-            <version>0.2.0</version>
         </dependency>
 
         <dependency>
@@ -88,33 +83,33 @@
         <dependency>
             <groupId>ai.djl</groupId>
             <artifactId>api</artifactId>
-            <version>0.2.0</version>
+            <version>${djl.version}</version>
         </dependency>
         <dependency>
             <groupId>ai.djl</groupId>
             <artifactId>basicdataset</artifactId>
-            <version>0.2.0</version>
+            <version>${djl.version}</version>
         </dependency>
         <dependency>
             <groupId>ai.djl</groupId>
             <artifactId>model-zoo</artifactId>
-            <version>0.2.0</version>
+            <version>${djl.version}</version>
         </dependency>
         <dependency>
             <groupId>ai.djl.mxnet</groupId>
             <artifactId>mxnet-model-zoo</artifactId>
-            <version>0.2.0</version>
+            <version>${djl.version}</version>
         </dependency>
         <dependency>
             <groupId>ai.djl.mxnet</groupId>
             <artifactId>mxnet-engine</artifactId>
-            <version>0.2.0</version>
+            <version>${djl.version}</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>ai.djl.mxnet</groupId>
             <artifactId>mxnet-native-mkl</artifactId>
-            <version>1.6.0-a</version>
+            <version>1.7.0-a</version>
             <classifier>${classifier}</classifier>
             <scope>runtime</scope>
         </dependency>
