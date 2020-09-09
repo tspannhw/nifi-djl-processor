@@ -2,6 +2,7 @@ package com.dataflowdeveloper.djl;
 
 
 import ai.djl.modality.Classifications;
+import jdk.nashorn.internal.objects.NativeArray;
 import org.apache.nifi.util.MockFlowFile;
 import org.apache.nifi.util.TestRunner;
 import org.apache.nifi.util.TestRunners;
@@ -54,6 +55,27 @@ public class DeepLearningProcessorTest {
 
             for (String attribute : attributes.keySet()) {
                 System.out.println("Attribute:" + attribute + " = " + mockFile.getAttribute(attribute));
+            }
+        }
+    }
+
+    @Test
+    public void testQA() throws Exception {
+        QAService q = new QAService();
+        String answer = q.predict();
+        System.out.println("Answer: {}" + answer);
+    }
+
+    @Test
+    public void testSentiment() throws Exception {
+        SentimentAnalysisService s = new SentimentAnalysisService();
+        List<Result> results = s.predict( "Cloudera is the best company in the world.  Awesome" );
+        if ( results != null && results.size() > 0) {
+            for (Result result : results) {
+                if ( result != null) {
+                    System.out.println("Class:" + result.getDetectedClass() + " p=" + result.getProbability()
+                    + " p100=" +  result.getProbabilityPercentage());
+                }
             }
         }
     }

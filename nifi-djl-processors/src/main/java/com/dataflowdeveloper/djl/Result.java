@@ -35,6 +35,35 @@ public class Result implements Serializable {
     private String detectedClass;
     private double probability;
     private int rank;
+    private double probabilityPercentage;
+
+    @Override
+    public String toString() {
+        return new StringJoiner( ", ", Result.class.getSimpleName() + "[", "]" )
+                .add( "detectedClass='" + detectedClass + "'" )
+                .add( "probability=" + probability )
+                .add( "rank=" + rank )
+                .add( "probabilityPercentage=" + probabilityPercentage )
+                .add( "boundingBoxX=" + boundingBoxX )
+                .add( "boundingBoxY=" + boundingBoxY )
+                .add( "boundBoxWidth=" + boundBoxWidth )
+                .add( "boundingBoxHeight=" + boundingBoxHeight )
+                .add( "imageWidth=" + imageWidth )
+                .add( "imageHeight=" + imageHeight )
+                .add( "imageMinX=" + imageMinX )
+                .add( "imageMinY=" + imageMinY )
+                .add( "extraInformation='" + extraInformation + "'" )
+                .add( "detection=" + detection )
+                .toString();
+    }
+
+    public double getProbabilityPercentage() {
+        return probabilityPercentage;
+    }
+
+    public void setProbabilityPercentage(double probabilityPercentage) {
+        this.probabilityPercentage = probabilityPercentage;
+    }
 
     private double boundingBoxX;
     private double boundingBoxY;
@@ -190,24 +219,6 @@ public class Result implements Serializable {
 
     public void setExtraInformation(String extraInformation) {
         this.extraInformation = extraInformation;
-    }
-
-    @Override
-    public String toString() {
-        return new StringJoiner(", ", Result.class.getSimpleName() + "[", "]")
-                .add("detectedClass='" + detectedClass + "'")
-                .add("probability=" + probability)
-                .add("rank=" + rank)
-                .add("boundingBoxX=" + boundingBoxX)
-                .add("boundingBoxY=" + boundingBoxY)
-                .add("boundBoxWidth=" + boundBoxWidth)
-                .add("boundingBoxHeight=" + boundingBoxHeight)
-                .add("imageWidth=" + imageWidth)
-                .add("imageHeight=" + imageHeight)
-                .add("imageMinX=" + imageMinX)
-                .add("imageMinY=" + imageMinY)
-                .add("extraInformation='" + extraInformation + "'")
-                .toString();
     }
 
 
