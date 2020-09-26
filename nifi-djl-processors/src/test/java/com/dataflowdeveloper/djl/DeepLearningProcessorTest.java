@@ -59,26 +59,26 @@ public class DeepLearningProcessorTest {
         }
     }
 
-    @Test
-    public void testQA() throws Exception {
-        QAService q = new QAService();
-        String answer = q.predict();
-        System.out.println("Answer: {}" + answer);
-    }
-
-    @Test
-    public void testSentiment() throws Exception {
-        SentimentAnalysisService s = new SentimentAnalysisService();
-        List<Result> results = s.predict( "Cloudera is the best company in the world.  Awesome" );
-        if ( results != null && results.size() > 0) {
-            for (Result result : results) {
-                if ( result != null) {
-                    System.out.println("Class:" + result.getDetectedClass() + " p=" + result.getProbability()
-                    + " p100=" +  result.getProbabilityPercentage());
-                }
-            }
-        }
-    }
+//    @Test
+//    public void testQA() throws Exception {
+//        QAService q = new QAService();
+//        String answer = q.predict();
+//        System.out.println("Answer: {}" + answer);
+//    }
+//
+//    @Test
+//    public void testSentiment() throws Exception {
+//        SentimentAnalysisService s = new SentimentAnalysisService();
+//        List<Result> results = s.predict( "Cloudera is the best company in the world.  Awesome" );
+//        if ( results != null && results.size() > 0) {
+//            for (Result result : results) {
+//                if ( result != null) {
+//                    System.out.println("Class:" + result.getDetectedClass() + " p=" + result.getProbability()
+//                    + " p100=" +  result.getProbabilityPercentage());
+//                }
+//            }
+//        }
+//    }
 
     @Test
     public void testProcessor() throws Exception {
