@@ -25,7 +25,7 @@ import java.util.Map;
 /**
  * see https://github.com/awslabs/djl/
  * https://github.com/tspannhw/nifi-mxnetinference-processor
- * upgraded from 0.2 to 0.6
+ * upgraded from 0.2 to 0.6 to 0.10.0
  */
 public class DeepLearningService {
 
@@ -58,7 +58,7 @@ public class DeepLearningService {
                         .optApplication( Application.CV.OBJECT_DETECTION )
                         .setTypes( Image.class, DetectedObjects.class )
                         .optFilter( "backbone", backbone )
-                        .optOptions( options )
+                        .optFilter("backbone", backbone)
                         .optProgress( new ProgressBar() )
                         .build();
         try (ZooModel<Image, DetectedObjects> model = ModelZoo.loadModel( criteria )) {
